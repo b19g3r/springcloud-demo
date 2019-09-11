@@ -11,3 +11,11 @@ eureka:
 zuul:
   routes:
     provider: /p/**
+
+logging:
+  level:
+    com:
+      netflix:
+        config:
+          sources:
+            URLConfigurationSource: ERROR

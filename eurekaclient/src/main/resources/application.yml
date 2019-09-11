@@ -1,5 +1,5 @@
 server:
-  port: 8010
+  port: 8011
 spring:
   application:
     name: provider
@@ -8,3 +8,10 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
+logging:
+  level:
+    com:
+      netflix:
+        config:
+          sources:
+            URLConfigurationSource: ERROR
